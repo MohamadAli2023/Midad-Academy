@@ -26,6 +26,3 @@ if (isset($_REQUEST['submit'])) {
 }
 
 ?>
-
-
-Hello world emergenccy fix
