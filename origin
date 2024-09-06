@@ -1,0 +1,49 @@
+[33mcommit 9765c1ecafc82f5b586b76035c998b056f6a445a[m[33m ([m[1;31morigin/master[m[33m)[m
+Author: Mohamad Ali <124209717+MohamadAli2023@users.noreply.github.com>
+Date:   Fri Sep 6 21:54:36 2024 +0300
+
+    Create README.md
+
+[33mcommit e48add25bf86c8abca1301cbe9a736bde7f8e3e7[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmaster[m[33m)[m
+Author: Mohamad Ali <Hassanmhamad777@gmail.com>
+Date:   Fri Sep 6 20:02:04 2024 +0300
+
+    portfolio image deleted
+
+[33mcommit 96e1362a59334bb8c8fc53cb530befe63bce48e7[m[33m ([m[1;32mnew-branch[m[33m)[m
+Merge: cd6468f 6ce6acb
+Author: Mohamad Ali <Hassanmhamad777@gmail.com>
+Date:   Fri Sep 6 20:00:54 2024 +0300
+
+    merging to add portfolio image from branch-design
+
+[33mcommit cd6468f6a68d2d05acce5447bed242149dae7875[m
+Merge: 4e94e42 17af29f
+Author: Mohamad Ali <Hassanmhamad777@gmail.com>
+Date:   Fri Sep 6 19:53:36 2024 +0300
+
+    Merge branch 'checkout'
+
+[33mcommit 4e94e4245a188fc1044e0281b4b012276b1c966b[m
+Author: Mohamad Ali <Hassanmhamad777@gmail.com>
+Date:   Fri Sep 6 19:45:11 2024 +0300
+
+    updated index.html with emergency fix
+
+[33mcommit 6ce6acbcbaf87deb117a14ca985f2ef3b16b8df8[m[33m ([m[1;32mbranch-design[m[33m)[m
+Author: Mohamad Ali <Hassanmhamad777@gmail.com>
+Date:   Fri Sep 6 19:36:23 2024 +0300
+
+    adding an image to branch branch-design
+
+[33mcommit 17af29fcb57f7b207316cadaf0bf663c00b477f1[m
+Author: Mohamad Ali <Hassanmhamad777@gmail.com>
+Date:   Fri Sep 6 19:30:13 2024 +0300
+
+    making changes to check the branch concept
+
+[33mcommit 71ef36f21df5851c81f6b66609a6e75d5e13d89c[m
+Author: Mohamad Ali <Hassanmhamad777@gmail.com>
+Date:   Fri Sep 6 19:09:25 2024 +0300
+
+    first version of Midad Academy website with git
