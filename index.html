@@ -43,29 +43,29 @@
   <header id="header" class="fixed-top">
     <div class="container d-flex align-items-center">
 
-      <h1 ><a href="index.php"><img src="img/Midad Academy without bg.png" class="midadlogo"></a></h1>
+      <h1 ><a href="index.html"><img src="img/Midad Academy without bg.png" class="midadlogo"></a></h1>
 
       <nav id="navbar" class="navbar order-last order-lg-0">
         <ul>
-          <li><a class="active" href="index.php">Homess</a></li>
-          <li><a href="about.php">About</a></li>
-          <li><a href="courses.php">Courses</a></li>
-          <li><a href="trainers.php">Trainers</a></li>
-          <li><a href="workshops.php">Workshop</a></li>
-          <li><a href="contact.php">Contact us</a></li>
+          <li><a class="active" href="index.html">Homess</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="courses.html">Courses</a></li>
+          <li><a href="trainers.html">Trainers</a></li>
+          <li><a href="workshops.html">Workshop</a></li>
+          <li><a href="contact.html">Contact us</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
 
       <?php
       session_start();
-      require('config.php');
+      require('config.html');
       if(isset($_SESSION['id'])  )
       {
         ?>
-          <a href="logout.php" class="get-started-btn">LOGOUT</a>
+          <a href="logout.html" class="get-started-btn">LOGOUT</a>
       <?php }else{ ?>
-        <a href="login.php" class="get-started-btn">Get Started</a>
+        <a href="login.html" class="get-started-btn">Get Started</a>
       <?php } ?>
     </div>
   </header><!-- End Header -->
@@ -92,7 +92,7 @@
             $d = mysqli_fetch_assoc($result); 
             echo" <h2> welcome ".$d['first_name']."</h2>";
      }}else{ ?>
-      <a href="login.php" class="get-started-btn">Get Started</a>
+      <a href="login.html" class="get-started-btn">Get Started</a>
       
     <?php } ?>
     </div>
@@ -171,7 +171,7 @@
                 Comprehensive courses, expert instructors, and a dedication to empowering learners.
               </p>
               <div class="text-center">
-                <a href="about.php" class="more-btn">Learn More <i class="bx bx-chevron-right"></i></a>
+                <a href="about.html" class="more-btn">Learn More <i class="bx bx-chevron-right"></i></a>
               </div>
             </div>
           </div>
@@ -227,7 +227,7 @@
                   <p class="price">$169</p>
                 </div>
 
-                <h3><a href="course-details.php">Website Development Bootcamp</a></h3>
+                <h3><a href="course-details.html">Website Development Bootcamp</a></h3>
                 <p>A comprehensive course on web development that takes you through HTML, CSS, and JavaScript to building dynamic web applications.</p>
               </div>
             </div>
@@ -242,7 +242,7 @@
                   <p class="price">$250</p>
                 </div>
 
-                <h3><a href="course-details.php">Python for Data Science</a></h3>
+                <h3><a href="course-details.html">Python for Data Science</a></h3>
                 <p>Learn how to use Python to analyze data, make predictions, and build machine learning models in this comprehensive data science course.</p>
               </div>
             </div>
@@ -257,7 +257,7 @@
                   <p class="price">$199</p>
                 </div>
 
-                <h3><a href="course-details.php">Graphic Design Fundamentals</a></h3>
+                <h3><a href="course-details.html">Graphic Design Fundamentals</a></h3>
                 <p>Master the fundamentals of graphic design, including typography, color theory, and branding, with this engaging course.</p>
               </div>
             </div>
@@ -340,20 +340,20 @@
           <div class="col-lg-2 col-md-6 footer-links">
             <h4>Useful Links</h4>
             <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="index.php">Home</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="index.html">Home</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="about.html">About us</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="courses.php">Courses</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="trainers.php">Trainers</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="contact.php">Contact</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="courses.html">Courses</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="trainers.html">Trainers</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="contact.html">Contact</a></li>
             </ul>
           </div>
 
           <div class="col-lg-3 col-md-6 footer-links">
             <h4>Our Courses</h4>
             <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="course-details.php">Web Development</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="course-details.php">Data Science</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="course-details.php">Graphic Design</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="course-details.html">Web Development</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="course-details.html">Data Science</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="course-details.html">Graphic Design</a></li>
             </ul>
           </div>
 
