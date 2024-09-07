@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Courses - Midad Academy</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="img/Midad Academy without bg.png" rel="icon">
+  <link href="img/Midad Academy without bg.png" rel="apple-touch-icon">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- Header -->
+  <header id="header" class="fixed-top">
+    <div class="container d-flex align-items-center">
+      <h1><a href="index.html"><img src="img/Midad Academy without bg.png" class="midadlogo"></a></h1>
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a class="active" href="courses.html">Courses</a></li>
+          <li><a href="trainers.html">Trainers</a></li>
+          <li><a href="workshops.html">Workshops</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav>
+
+      <!-- AJAX call to PHP for login/logout button -->
+      <div id="login-area"></div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main id="main" data-aos="fade-in">
+    <section id="popular-courses" class="courses">
+      <div class="container" data-aos="fade-up">
+        <div class="row" data-aos="zoom-in" data-aos-delay="100">
+          <!-- Course items will be dynamically loaded from PHP -->
+          <div id="courses-content"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer id="footer">
+    <div class="container d-md-flex py-4">
+      <div class="me-md-auto text-center text-md-start">
+        <div class="copyright">
+          &copy; Copyright <strong><span>Midad Academy</span></strong>. All Rights Reserved
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/main.js"></script>
+
+  <!-- Load login button and courses dynamically -->
+  <script>
+    fetch('courses.php')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('login-area').innerHTML = data;
+      });
+
+    fetch('courses.php?load_courses=true')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('courses-content').innerHTML = data;
+      });
+  </script>
+
+</body>
+
+</html>
